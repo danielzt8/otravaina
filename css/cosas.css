@@ -1,0 +1,15 @@
+.center {
+  background-color: #fff;
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgb(87, 99, 100);
+    padding: 10px;
+  }
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

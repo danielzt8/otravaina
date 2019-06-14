@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cosas.css">
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+
+</head>
+<body>
+    
+<!--Form-->    
+<div class="container-fluid row justify-content-center">
+        <form class="form-container">
+                <div class="form-group col-6">
+                  <label for="exampleInputEmail1">Titulo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Selecciona </small>
+                </div>
+                <form>
+
+                
+                        <form>
+                                <div class="custom-file col">
+                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                              </form>
+                              <div class="form-group col-12">
+                                <label for="comment">Comment:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div> 
+                </form>
+<form action="" class="form-inline">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Categoria</option>
+                      <option value="1">Vehiculos</option>
+                      <option value="2">Hogar</option>
+                      <option value="3">Bebés y niños</option>
+                      <option value="4">Moda y belleza</option>
+                      <option value="5">Entretenimiento</option>
+                      <option value="6">Electronica</option>
+                      <option value="7">Negocios y servicios</option>
+                      <option value="8">Otros</option>
+                    </select>
+                  </form>  
+                  <div class="mx-2">
+                    <button type="button" class="btn btn-primary">Guardar y publicar</button>
+                  </div>
+                  
+                  <div class="mx-2">
+                    <button type="button" class="btn btn-primary">Publicar</button>
+                  </div>
+                  
+                  <div class="mx-2">
+                    <button type="button" class="btn btn-primary">Cancelar</button>
+                  </div>
+                
+</div>
+<!--fin form-->
+
+
+
+<script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

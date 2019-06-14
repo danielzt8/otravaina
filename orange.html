@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+        <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                    <a class="navbar-brand" href="#">
+                    <img src="imagen/letter-k-inside-a-circle.svg" width="30" height="30" alt="" id="sidebarCollapse" class="fa fa-align-justify">
+                Karma
+            </a>
+                
+        <!--<a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+                              <!--botones de registro y login-->
+                              <!--nota: los botones deben ir hasta el extremo derecho del navbar todavia no resuelvo eso-->
+        <div class="ml-auto pr-4">
+              <a href="#"><span>Username</span> </a>
+              </div>       
+        </div>
+        </nav>
+        <!--fin navbar-->
+        <section class="container-fluid bg">
+                <section class="row justify-content-center">
+                  <section class="col-10 col-sm-6 col-md-4 col-lg-3">
+                    <form class="form-container">
+                      <h3 class="mb-3">Agregar producto</h3>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Titulo</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Añadir titulo">
+                      <small id="emailHelp" class="form-text text-muted">Debes agregar un nombre clave para que tu producto sea encontrado</small>
+                    </div>
+<!--browse picture-->
+<div class="custom-file">
+    <input type="file" class="custom-file-input" id="customFile">
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div>
+<!--browse picture end-->
+
+                    <!--button añadir imagenes-->    
+                    <button type="button" class="btn btn-primary btn-sm my-2">
+
+                      Añadir imagenes
+                    </button>
+                    
+                    <!--fin del boton-->
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descripción</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <form class="form-inline">
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Categoria</option>
+                          <option value="1">Vehiculos</option>
+                          <option value="2">Hogar</option>
+                          <option value="3">Bebés y niños</option>
+                          <option value="4">Moda y belleza</option>
+                          <option value="5">Entretenimiento</option>
+                          <option value="6">Electronica</option>
+                          <option value="7">Negocios y servicios</option>
+                          <option value="8">Otros</option>
+                        </select>
+                        <div class="mx-2">
+                          <button type="button" class="btn btn-primary">Guardar y publicar</button>
+                        </div>
+                        
+                        <div class="mx-2">
+                          <button type="button" class="btn btn-primary">Publicar</button>
+                        </div>
+                        
+                        <div class="mx-2">
+                          <button type="button" class="btn btn-primary">Cancelar</button>
+                        </div>
+                        </form>             
+                  </section>
+                </section>
+              </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>         
+</body>
+</html>

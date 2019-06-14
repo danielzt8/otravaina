@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Hoja de estilos necesaria para el navbar-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fin de hoja de estilo necearia para el navbar-->
+    <title>Naranja</title>
+    <style> 
+        input[type=text] {
+          width: 130px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white;
+          background-image: url('searchicon.png');
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 40px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+          width: 100%;
+        }
+        </style>
+</head>
+
+    <body>
+   
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header sticky-top">
+                    <h3>Tienda virtual</h3>
+                </div>
+                
+                <!--categorias-->
+                <ul class="list-unstyled components">
+                    <p>Categorias</p>
+                    <li class="active">
+                        <a href="#Carros" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">vehiculos</a>
+                        <ul class="collapse list-unstyled" id="Carros">
+                            <li>
+                                <a href="#">Carros</a>
+                            </li>
+                            <li>
+                                <a href="#">Jeepetas y camionetas</a>
+                            </li>
+                            <li>
+                                <a href="#">Motores y pasolas</a>
+                            </li>
+                            <li>
+                                <a href="#">accesorios para vehiculos</a>
+                            </li>
+                            <li>
+                                <a href="#">botes</a>
+                            </li>
+                            <li>
+                                <a href="#">Vehiculos pesados</a>
+                            </li>
+                            <li>
+                                <a href="#">Otros vehiculos</a>
+                            </li>
+                        </ul> 
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#hogar" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hogar</a>
+                        <ul class="collapse list-unstyled" id="hogar">
+                            <li>
+                                <a href="#">Electrodomesticos</a>
+                            </li>
+                            <li>
+                                <a href="#">Decoración y accesorios</a>
+                            </li>
+                            <li>
+                                <a href="#">Aires acondicionados y abanicos</a>
+                            </li>
+                            <li>
+                                <a href="#">Muebles y colchones</a>
+                            </li>
+                            <li>
+                                <a href="#">Cocina</a>
+                            </li>
+                            <li>
+                                <a href="#">Herramientas, jardines y exterior</a>
+                            </li>
+                            <li>
+                                <a href="#">Artes y antigüedades</a>
+                            </li>
+                        </ul> 
+                    </li>
+                   
+                    <li>
+                        <a href="#bebes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bebés y niños</a>
+                        <ul class="collapse list-unstyled" id="bebes">
+                            <li>
+                                <a href="#">Ropas y zapatos</a>
+                            </li>
+                            <li>
+                                <a href="#">Muebles</a>
+                            </li>
+                            <li>
+                                <a href="#">Coches y sillas</a>
+                            </li>
+                            <li>
+                                <a href="#">Cuidado y nutrición</a>
+                            </li>
+                            <li>
+                                <a href="#">juguetes</a>
+                            </li>
+                            <li>
+                                <a href="#">Accesorios</a>
+                            </li>
+                        </ul> 
+                    </li>
+                    
+                    <li>
+                        <a href="#moda" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Moda y belleza</a>
+                        <ul class="collapse list-unstyled" id="moda">
+                            <li>
+                                <a href="#">Ropa para mujeres</a>
+                            </li>
+                            <li>
+                                <a href="#">Ropa para hombres</a>
+                            </li>
+                            <li>
+                                <a href="#">Carteras y maletas</a>
+                            </li>
+                            <li>
+                                <a href="#">Joyas, relojes y accesorios</a>
+                            </li>
+                            <li>
+                                <a href="#">Zapatos para mujeres</a>
+                            </li>
+                            <li>
+                                <a href="#">Zapatos para hombres</a>
+                            </li>
+                            <li>
+                                <a href="#">Zapatos unisex</a>
+                            </li>
+                            <li>
+                                <a href="#">Salud y belleza</a>
+                            </li>
+                        </ul> 
+                    </li>
+
+                    <li>
+                        <a href="#deporte" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Entretenimiento</a>
+                        <ul class="collapse list-unstyled" id="deporte">
+                            <li>
+                                <a href="#">Hobby y coleccion</a>
+                            </li>
+                            <li>
+                                <a href="#">Taquillas para evento</a>
+                            </li>
+                            <li>
+                                <a href="#">Deportes</a>
+                            </li>
+                            <li>
+                                <a href="#">Bicicleta y accesorios</a>
+                            </li>
+                            <li>
+                                <a href="#">Animales y mascotas</a>
+                            </li>
+                            <li>
+                                <a href="#">Libros y revistas</a>
+                            </li>
+                            <li>
+                                <a href="#">DvD, blue-ray y peliculas</a>
+                            </li>
+                            <li>
+                                <a href="#">Tours y viajes</a>
+                            </li>
+                            <li>
+                                <a href="#">Instrumentos musicales</a>
+                            </li>
+                            <li>
+                                <a href="#">CD y vinilos</a>
+                            </li>
+                        </ul> 
+                    </li>
+
+                    <li>
+                        <a href="#electronica" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Electronica</a>
+                        <ul class="collapse list-unstyled" id="electronica">
+                            <li>
+                                <a href="#">Celulares y tabletas</a>
+                            </li>
+                            <li>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Computadoras y laptops</a>
+                            </li>
+                            <li>
+                                <a href="#">Consolas y videojuegos</a>
+                            </li>
+                            <li>
+                                <a href="#">Accesorios para electronica</a>
+                            </li>
+                            <li>
+                                <a href="#">Impresoras y scanners</a>
+                            </li>
+                            <li>
+                                <a href="#">Camaras y audios</a>
+                            </li>
+                            <li>
+                                <a href="#">Plantas e inversores</a>
+                            </li>
+                            <li>
+                                <a href="#">Otros electronicos</a>
+                            </li>
+                        </ul> 
+                    </li>
+
+                    <li>
+                        <a href="#servicios" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Servicios</a>
+                        <ul class="collapse list-unstyled" id="servicios">
+                            <li>
+                                <a href="#">Servicios profesionales</a>
+                            </li>
+                            <li>
+                                <a href="#">Cursos y clases</a>
+                            </li>
+                            <li>
+                                <a href="#">Equipos profesionales</a>
+                            </li>
+                            <li>
+                                <a href="#">Articulos de oficina</a>
+                            </li>
+                            <li>
+                                <a href="#">negocios en venta</a>
+                            </li>
+                            <li>
+                                <a href="#">Contruccion e industrial</a>
+                            </li>
+                        </ul> 
+                    </li>
+
+                    <li>
+                        <a href="#otro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Otros productos</a>
+                        <ul class="collapse list-unstyled" id="otro">
+                            <li>
+                                <a href="#">Otros productos</a>
+                            </li>
+                        </ul> 
+                    </li>
+
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="#" class="download">Download code</a>
+                    </li>
+                    <li>
+                        <a href="#" class="article">article</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--fin de categorias-->
+            
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                    <a class="navbar-brand" href="#">
+                    <img src="imagen/letter-k-inside-a-circle.svg" width="30" height="30" alt="" id="sidebarCollapse" class="fa fa-align-justify">
+                Karma
+            </a>
+                
+       <!--<a class="navbar-brand" href="#">Navbar</a> -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+            <form class="form-inline my-2 my-lg-0"> 
+                  <!--icono busqueda--><img src="imagen/busqueda.svg" width="30" height="30" class="d-inline-block align-top" alt="" id=""><!--fin icono de busqueda-->
+              <input class="form-control mr-sm-2 rounded-pill" type="search"  placeholder="Search" aria-label="Search">
+                              <!--botones de registro y login-->
+                              <!--nota: los botones deben ir hasta el extremo derecho del navbar todavia no resuelvo eso-->
+              <div class="ml-auto pr-4">
+              <button type="button" class="btn btn-outline-danger rounded">login</button>
+              <button type="button" class="btn btn-outline-secondary rounded">Register</button>
+            </div>            
+       </div>
+     </nav>
+     <!--cards--> 
+     <div class="container-fluid mt-5 pt-5">
+        <div class="card-deck">
+            <div class="card">
+              <a href="#"><img src="imagen/3ds.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="imagen/zapatillas.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="imagen/honor.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+     </div>
+
+     <div class="container-fluid mt-5 pt-5">
+        <div class="card-deck">
+            <div class="card">
+              <a href="#"><img src="imagen/smartwatch.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="imagen/avengers.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#"><img src="imagen/card.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+     </div>
+           
+            </div>     
+       </div>   
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#sidebarCollapse').on('click',function(){
+            $('#sidebar').toggleClass('active');
+        });
+    });  
+</script>
+</body>
+</html>

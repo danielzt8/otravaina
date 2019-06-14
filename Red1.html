@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="La pagina de rojo que no sera roja">
+    <meta name="keywords" content="red,rojo,color rojo">
+    <meta name="author" content="redtaro">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Red</title>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+           <!--icono de butra--> <img src="imagen/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""><!--fin icono de butra-->
+    Red
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+          <form class="form-inline my-2 my-lg-0"> 
+                <!--icono busqueda--><img src="imagen/busqueda.svg" width="30" height="30" class="d-inline-block align-top" alt=""><!--fin icono de busqueda-->
+            <input class="form-control mr-sm-2 rounded-pill" type="search"  placeholder="Search" aria-label="Search">
+                            <!--botones de registro y login-->
+                            <!--nota: los botones deben ir hasta el extremo derecho del navbar todavia no resuelvo eso-->
+            <div class="">
+            <button type="button" class="btn btn-outline-danger rounded mr-2">login</button>
+            <button type="button" class="btn btn-outline-secondary rounded">Register</button>
+          </div>            <!--Fin icono de registro y login-->
+
+        </form>
+        </div>
+      </nav>
+    <!--fin navbar-->
+</head>
+<body>
+<!--Comienzo del menu de categorias-->
+<div class="wrapper">
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>BOOTSTRAP SIDEBAR</h3>
+    </div>
+    
+    
+    <ul class="list-unstyled components">
+      <p>Dummy Heading</p>
+      <li class="active">
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="#">home1</a>
+          </li>
+          <li>
+            <a href="#">home2</a>
+          </li>
+          <li>
+            <a href="#">home3</a>
+          </li>
+        </ul> 
+      </li>
+      
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a href="#">page1</a>
+          </li>
+          <li>
+            <a href="#">page2</a>
+          </li>
+          <li>
+            <a href="#">page3</a>
+          </li>
+        </ul> 
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+    
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="#" class="download">Download code</a>
+      </li>
+      <li>
+        <a href="#" class="article">article</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fa fa-align-justify"></i> <span>toggle sidebar</span>
+    </button>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
